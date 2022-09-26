@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="BloodDonation.com.Site2" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>  
+         <asp:ContentPlaceHolder ID="title" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </title>
+  
+    <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-4.4.1-dist/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="bootstrap-4.4.1-dist/jquery.min.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/custom.js"></script>
+    <link href="bootstrap-4.4.1-dist/css/style.css" rel="stylesheet" />
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     
+    <style type="text/css">
+      
+        #ho1{
+            width:50px;
+            height:50px;
+            margin-top:-10px;
+            margin-right:10px;
+        }
+        #logo{
+            width:50px;
+            height:110px;
+            margin-top:-40px;
+
+        }
+        #cr{
+            float:right;
+            width:100%;
+            height:10%;
+            color:ActiveCaption;
+            font-family:"Monotype Corsiva";
+            
+
+        }
+        .UImg{
+            border-radius:50%;
+            width:80px;
+            height:70px;
+           
+            margin-top:-30px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="navbar  navbar-inverse set-radius-zero">
+             <div class="container">
+                 <div class="navbar-header">
+                     <div style="float:left">
+                         <a class="navbar-brand" href="#">
+                             <h2 style="margin:-5px;">LifeSaver.com</h2>
+                             <img src="img/logo.jpg" id="logo"/>
+                         </a>
+                     </div>
+                  </div>
+                 <div class="right-div">
+                       <a href="UserInfo.aspx">
+                    <asp:Image ID="Image1" runat="server"   Class="UImg"/> </a>
+               
+            
+                     <asp:Button ID="Button1" runat="server" Text="Log-me-out" class="btn btn-danger pull-right" OnClick="Button1_Click"/>
+                   <a href="Home.aspx"><img src="img/homologo.png" id="ho1"/></a>
+                         </div>
+            </div>
+            
+               
+            
+        </div><hr />
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+    </div><br />
+        <br /><hr />
+        <div id="cr" >
+            <h3>Copyright2022 Vanshika.ALL RIGHT RESERVED</h3>
+        </div>
+    </form>
+</body>
+</html>
